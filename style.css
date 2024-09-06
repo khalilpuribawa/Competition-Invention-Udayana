@@ -1,0 +1,546 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 50vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: #1D0E07;
+    margin-left: 25%;
+    position: fixed;
+    margin-top: 20px;
+    border-radius: 150px;
+    z-index: 50;
+    animation: fade-down 2s ease-in;
+}
+
+
+.logo{
+    margin-top: 5px;
+    margin-right: 25px;
+    width: 15%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251, 251, 251);
+    /* padding-left: 80px; */
+    animation: fade-down 2s ease-in;
+}
+
+.logo img{
+    width: 100%;
+
+}
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menu{
+    font-family: "Montserrat";
+    text-decoration: none;
+    float: right;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    line-height: 75px;
+    position: fixed;
+    position: relative;
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.menu li {
+    display: inline; 
+    margin: 0 15px;
+    transition: 0.5s;
+}
+.menu li:hover{
+    font-weight: 700;
+    transition: 0.5s;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    display: inline;
+}
+
+nav ul li a {
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    position: relative; /* For pseudo-element positioning */
+    color: rgb(255, 255, 255); /* Default link color */
+}
+
+.menu ul li a{  
+    color: #FDDCA4;
+    animation: fade-down 1s ease-in;
+}
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(- 50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.home-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(to bottom, #E48936, #F3BA77, #FEE0AA,#F8C27F,#EF9642);
+}
+
+.home-page h1{
+    margin-bottom: 120px;
+}
+
+h1.judul{
+    padding-left: 70px;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: "Montserrat";
+    justify-content: left;
+    margin: 0;
+    width: 70%;
+    padding-bottom: 25%;
+    animation: fade-right 1s ease-in;
+}
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.wayang{
+    font-style: italic;
+    font-weight: 800;
+}
+.wayang-kulit{
+    animation: fade-up 2s ease-in;
+    z-index: 10;
+
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px) rotate(-20);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) rotate(0);
+    }
+}
+.wayang-gambar{
+    margin-top: 50px;
+    animation: fade-up 2s ease-in;
+    z-index: 10;
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px) rotate(-20);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) rotate(0);
+    }
+}
+img.awan{
+    width: 100vw;
+    height: 75vh;
+    position: absolute;
+    object-fit: cover;
+    top: 255px; /* Mengatur posisi gambar lebih naik ke atas */
+    animation: fade-up 2s;
+    z-index: 10;
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px) ;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) ;
+    }
+}
+.bungkus-awan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.awan-animasi{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(Image/awan\ banyak.svg);
+    animation: animasi-awan 120s linear infinite
+}
+
+@keyframes animasi-awan {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 5440px;
+    }
+}
+.active{
+    font-weight: 700;
+}
+.awan-pg2{
+    width: 100vw;
+    height: 80vh;
+    margin-top: 50px;
+    animation: fade-in 2s;
+    background-color: #FEE0AA;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.about {
+    margin-top: -5px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEE0AA;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 600px;
+    width: 1200px;
+    margin-right: 3%;
+    margin-left: 12%;
+    margin-top: -20%;
+    animation: fade-right 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes fade-right{
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);}
+    100% {opacity: 1;
+        transform: translateX(0px);}
+}
+
+@keyframes slide-animation {
+    0% { left: 10px; }
+    20% { left: 10px; }
+    30% { left: -1200px; } /* Slide ke gambar kedua */
+    50% { left: -1200px; }
+    100% { left: 10px; } /* Kembali ke gambar pertama */
+}
+
+.slide-images {
+    width: 3600px; /* Sesuai dengan jumlah gambar * lebar gambar */
+    height: 600px;
+    position: relative;
+    animation-name: slide-animation;
+    animation-duration: 20s; /* Durasi animasi diatur lebih lama */
+    animation-iteration-count: infinite;
+    animation-direction: normal; /* Animasi akan berjalan searah, tidak bolak-balik */
+    /* display: flex; */
+}
+
+
+
+.img-container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+.kolom-text{
+    margin-top: -60px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat";
+}
+.judul-about{
+    margin-left: -30px;
+    font-size: 60px;
+    padding-bottom: 30px;
+    animation: down-judul 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes down-judul{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.deskripsi-about{
+    font-size: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+    animation: down-deskripsi 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+@keyframes down-deskripsi{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.desk-bold{
+    text-align: inherit;
+    font-weight: 700;
+}
+
+h1.wayangabout{
+    color: linear-gradient(to right,#462A15,#F8C27F);
+}
+
+.wrapper-2{
+    padding: 10px 10%;
+}
+
+#card-area{
+    padding: 50px 0;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 50% );
+    opacity: 95%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+    
+.overlay h3{
+    margin-right: 70px;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.overlay p{
+    font-size: 10px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Montserrat";
+    letter-spacing: 2px;
+}
+.type{
+    width: 100vw;
+    background-color: #FEE0AA;
+}
+.overlay a{
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    padding: 10px 100px;
+    transition: background 2s, font-weight 0.5s;
+    font-weight: 400;
+}
+
+.overlay a:hover{
+    transition: background 2s, font-weight 0.5s;
+    font-weight: 700;
+    
+}
+
+.boxLhover img{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
+}
+
+.judul-type{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Montserrat";
+    margin-bottom: -50px;
+}
+
+.history{
+   background-image: url('Image/bg.svg');
+    width: 100vw;
+    justify-content: cen;
+}
+.judul-history{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    background-color: #1D0E07;
+    color: white;
+    width: 100vw;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.judul-history-2{
+    color: #AE773E;
+    font-family: "Montserrat";
+    font-size: 100px;
+    margin-top: 95px;
+    margin-left: 50px;
+}
+.deskripsi-history {
+    margin-top: 27px;
+    font-family: "Montserrat";
+    width: 38%;
+    margin-left: 53px;
+    /* Atur tinggi elemen sesuai kebutuhan */
+    height: 300px;
+    /* Menambahkan batasan pada tinggi elemen */
+    overflow-y: auto;
+    background: linear-gradient(to-top, transparent);
+}
+
+.vertical-scroll {
+    /* Anda bisa menambahkan style lain yang diperlukan di sini */
+    /* Contoh: padding, background, border, dll. */
+    padding: 10px;
+}
+
+.deskripsi-history::-webkit-scrollbar{
+    display: none;
+}
+
+.history-pg{
+    height: 539px;
+    background: linear-gradient(to left, transparent,#FEE0AA 80%, #FEE0AA);
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
