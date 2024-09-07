@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    background-color: #FEE0AA;
     scroll-behavior: smooth;
     background-attachment: fixed;
     margin: 0;
@@ -393,6 +394,9 @@ h1.wayangabout{
 
 #card-area{
     padding: 50px 0;
+    animation: fade-right 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .box-area{
@@ -455,6 +459,9 @@ h1.wayangabout{
     letter-spacing: 2px;
 }
 .type{
+    margin-top: 60px;
+    padding-top: 100px;
+    height: 100vh;
     width: 100vw;
     background-color: #FEE0AA;
 }
@@ -495,13 +502,20 @@ h1.wayangabout{
     font-size: 70px;
     font-weight: 800;
     font-family: "Montserrat";
-    margin-bottom: -50px;
+    margin-bottom: -80px;
+    animation: down-judul 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .history{
+    margin-top: -50px;
    background-image: url('Image/bg.svg');
     width: 100vw;
-    justify-content: cen;
+    justify-content: center;
+    animation: down-judul 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 .judul-history{
     text-align: center;
@@ -514,6 +528,7 @@ h1.wayangabout{
     font-size: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
+
 }
 .judul-history-2{
     color: #AE773E;
@@ -552,7 +567,7 @@ h1.wayangabout{
 }
 .pembatas{
     height: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     justify-content: center;
     display: flex;
     width: 100vw;
@@ -567,11 +582,18 @@ h1.wayangabout{
 }
 
 .title{
-  margin-left: 50px;
+    display: flex;
+  /* margin-left: 10px; */
   padding-top: 50px;
   font-size: 50px;
+  text-align: center;
+  font-weight: 800;
   font-family: "Montserrat";
-  text-decoration-line : underline;
+  justify-content: center;
+  animation: down-judul 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
+  /* text-decoration-line : underline; */
 }
 
 .image {
@@ -586,7 +608,7 @@ h1.wayangabout{
     background-color: #FEE0AA;
 }
 .grid-wrapper {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-right: 50px;
     margin-left: 50px;
     display: grid;
@@ -594,6 +616,9 @@ h1.wayangabout{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
+    animation: down-judul 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .grid-wrapper > div {
