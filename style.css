@@ -20,12 +20,12 @@ body{
     overflow-x: hidden;
 }
 .wrapper{
-    width: 50vw;
+    width: 60vw;
     height: 8vh;
     display: flex;
     justify-content: center;
     background-color: #1D0E07;
-    margin-left: 25%;
+    margin-left: 20%;
     position: fixed;
     margin-top: 20px;
     border-radius: 150px;
@@ -37,7 +37,7 @@ body{
 .logo{
     margin-top: 5px;
     margin-right: 25px;
-    width: 15%;
+    width: 13%;
     float: left;
     display: flex;
     justify-content: center;
@@ -62,6 +62,8 @@ body{
     }
 }
 .menu{
+    display: inline-block;
+    vertical-align: middle;
     font-family: "Montserrat";
     text-decoration: none;
     float: right;
@@ -114,7 +116,8 @@ nav ul li a {
     color: rgb(255, 255, 255); /* Default link color */
 }
 
-.menu ul li a{  
+.menu ul li a{ 
+
     color: #FDDCA4;
     animation: fade-down 1s ease-in;
 }
@@ -452,7 +455,7 @@ h1.wayangabout{
 .overlay p{
     font-size: 10px;
     margin-right: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 10px;
     color: white;
     font-family: "Montserrat";
@@ -475,7 +478,7 @@ h1.wayangabout{
     border-radius: 50px;
     text-align: center;
     margin-right: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     padding: 10px 100px;
     transition: background 2s, font-weight 0.5s;
     font-weight: 400;
@@ -517,6 +520,7 @@ h1.wayangabout{
     animation-timeline: view();
     animation-range: entry 0;
 }
+
 .judul-history{
     text-align: center;
     display: flex;
@@ -530,12 +534,20 @@ h1.wayangabout{
     padding-bottom: 30px;
 
 }
+.kolom-text-history{
+    display: flex;
+    flex-direction: column;
+    color: #b48758;
+    font-family: "Montserrat";  
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
 .judul-history-2{
     color: #AE773E;
     font-family: "Montserrat";
     font-size: 100px;
-    margin-top: 95px;
-    margin-left: 50px;
+    margin-top: -15px;
 }
 .deskripsi-history {
     margin-top: 27px;
@@ -591,8 +603,8 @@ h1.wayangabout{
   font-family: "Montserrat";
   justify-content: center;
   animation: down-judul 1s ease-in;
-    animation-timeline: view();
-    animation-range: entry 0;
+  animation-timeline: view();
+  animation-range: entry 0;
   /* text-decoration-line : underline; */
 }
 
@@ -603,12 +615,13 @@ h1.wayangabout{
     display: block; /* Changed from inline-block to block for better layout control */
 }
 .gallery{
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
     background-color: #FEE0AA;
+    z-index: 10;
 }
 .grid-wrapper {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 50px;
     margin-left: 50px;
     display: grid;
@@ -771,4 +784,19 @@ h1.wayangabout{
 
 .bold{
     font-weight: 700;
+}
+.kolom-text-figure{
+    margin-top: 50px;
+    margin-bottom: -59px;
+    display: flex;
+    flex-direction: column;
+
+}
+.deskripsi-figure{
+    
+    justify-content: center;
+    font-family: "Montserrat";
+    justify-items: center;
+    margin-left: 630px;
+    margin-top: 80px;
 }
