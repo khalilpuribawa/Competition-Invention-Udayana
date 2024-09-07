@@ -7,16 +7,20 @@
     padding: 0px;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     scroll-behavior: smooth;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 .wrapper{
     width: 50vw;
-    height: 10%;
+    height: 8vh;
     display: flex;
     justify-content: center;
     background-color: #1D0E07;
@@ -87,6 +91,7 @@ nav{
     font-weight: 700;
     transition: 0.5s;
 }
+
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -123,7 +128,7 @@ nav ul li a {
     }
 }
 
-.home-page{
+#home{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -132,8 +137,9 @@ nav ul li a {
     background: linear-gradient(to bottom, #E48936, #F3BA77, #FEE0AA,#F8C27F,#EF9642);
 }
 
-.home-page h1{
-    margin-bottom: 120px;
+#home h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 h1.judul{
@@ -236,8 +242,8 @@ img.awan{
         background-position: 5440px;
     }
 }
-.active{
-    font-weight: 700;
+.nav ul li a.active{
+    font-weight: bold;
 }
 .awan-pg2{
     width: 100vw;
@@ -462,7 +468,7 @@ h1.wayangabout{
     border-radius: 50px;
     text-align: center;
     margin-right: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     padding: 10px 100px;
     transition: background 2s, font-weight 0.5s;
     font-weight: 400;
@@ -543,4 +549,201 @@ h1.wayangabout{
     background: linear-gradient(to left, transparent,#FEE0AA 80%, #FEE0AA);
     padding-top: 50px;
     padding-bottom: 65px;
+}
+.pembatas{
+    height: 100%;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    background-color:#462A15 ;
+}
+
+.container{
+    max-width: 1224px;
+    width: 100vw;
+    margin: auto;
+    padding: 40px;
+}
+
+.title{
+  margin-left: 50px;
+  padding-top: 50px;
+  font-size: 50px;
+  font-family: "Montserrat";
+  text-decoration-line : underline;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: block; /* Changed from inline-block to block for better layout control */
+}
+.gallery{
+    height: 110vh;
+    width: 100vw;
+    background-color: #FEE0AA;
+}
+.grid-wrapper {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: grid;
+    gap: 10px; /* Changed grid-gap to gap for modern CSS syntax */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Added to ensure content fits within the grid item */
+}
+
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+.grid-wrapper .tall-2 {
+    grid-row: span 2;
+    grid-row: 1/3;
+    grid-column: 5;
+}
+.img-13 {
+    grid-column: span 3; /* Membuat elemen mengambil tiga kolom */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas elemen */
+}
+
+.img-13 img {
+    width: 100%;
+    height: auto;
+}
+/* .grid-wrapper .tall {
+  grid-column: 4 / 2;
+    grid-row: 2 / 1;
+}   */
+
+.wayang-footer{
+    background-color: #1D0E07;
+    width: 100vw;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.wayang-footer .menu{
+    margin-top: -70px;
+    margin-bottom: 3em;
+}
+.wayang-footer .menu ul{
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+
+.wayang-footer .menu li{
+    display: inline-block;
+    margin: 0 0.7em 0.7em 0;
+    text-align: center;
+}
+
+.wayang-footer .menu a{
+    transition: 0.3s;
+    font-weight: 600;
+    /* margin-top: 50px; */
+    color: #FDDCA4;
+}
+.wayang-footer .menu a:hover{
+    color: white;
+}
+
+.input-wrap{
+    /* margin: 1em 0; */
+    display: flex;
+}
+.form-footer{
+    margin-bottom: 40px;
+    margin-left: 200px;
+    border-radius: 50px;
+}
+.input-wrap input{
+    padding: 0.5em;
+    border: none;
+    background: #D9D9D9;
+    color: #767676;
+}
+.input-wrap input:focus{
+    outline: none;
+}
+.input-wrap button{
+    padding: 0.8em;
+    background: #FEE0AA;
+    border: none;
+    color: #1D0E07;
+}
+.input-wrap button:hover{
+    background: #fff;
+    color: #111;
+}
+.container-footer{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; /* Membuat dua kolom dengan lebar yang sama */
+    gap: 20px; /*Memberikan jarak antar kolom*/
+}
+/* .col1{
+    width: fit-content;
+    height: fit-content;
+} */
+.logo-footer {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 80px; /* Ukuran tetap */
+    height: 50px; /* Ukuran tetap */
+    /* object-fit: cover; Menutupi ruang secara proporsional */
+    z-index: 50;
+}
+
+
+.col2{
+    grid-column: 1; /* Menempatkan .col2 di kolom pertama */
+    margin-top: 15px;
+    margin-left: 450px;
+}
+.col3{
+    grid-column: 2; /* Menempatkan .col3 di kolom kedua */
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-top: -73px;
+
+    
+}
+.text-col3{
+    margin-bottom: 10px;
+    color: #FEE0AA;
+    font-family: "Montserrat";
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.bold{
+    font-weight: 700;
 }

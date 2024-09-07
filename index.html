@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sang Paduka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script src="script.js"></script>
   <body>
     <div class="wrapper">
       <div class="logo">
@@ -14,17 +16,17 @@
       <div class="menu">
         <ul>
           <li><a href="#home" class="active">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#show">HISTORY</a></li>
-          <li><a href="#news">TYPES</a></li>
-          <li><a href="#contactus">GALLERY</a></li>
+          <li><a href="#about" class="active">ABOUT</a></li>
+          <li><a href="#history" class="active">HISTORY</a></li>
+          <li><a href="#type" class="active">TYPES</a></li>
+          <li><a href="#gallery" class="active">GALLERY</a></li>
         </ul>
       </div>
     </div>
     <div class="bungkus-awan">
       <div class="awan-animasi"></div>
     </div>
-    <section class="home-page">
+    <section class="home-page" id="home">
       <div class="kolom">
         <h1 class="judul">
           Let’s learn and know about Indonesian
@@ -38,7 +40,7 @@
     <img src="Image/awan.svg" class="awan" />
     <img src="Image/awan page 2.svg" class="awan-pg2" />
     <!-- KOLOM ABOUT -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-content">
         <div class="slider-frame">
           <div class="slide-images">
@@ -62,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section class="type">
+    <section class="type" id="type">
       <h1 class="judul-type">TYPES OF WAYANG</h1>
       <div id="card-area">
         <div class="wrapper-2">
@@ -134,60 +136,156 @@
         </div>
       </div>
     </section>
-    <section class="history">
-      <h1 class="judul-history">History of Wayang</h1>
+    <section class="history" id="history">
+      <h1 class="judul-history">History Of Wayang</h1>
       <div class="history-pg">
         <div class="judul-deskripsi">
           <h2 class="judul-history-2">Wayang</h2>
           <div class="vertical-scroll">
             <p class="deskripsi-history">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum Sed
-              ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?
+             <span class="bold">Sejarah Wayang</span>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum Sed
-                ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                velit, sed quia non numquam eius modi tempora incidunt ut labore
-                et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                veniam, quis nostrum exercitationem ullam corporis suscipit
-                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?
+Wayang adalah seni pertunjukan tradisional yang telah menjadi bagian integral dari budaya Indonesia selama berabad-abad. Asal-usul wayang di Indonesia dapat ditelusuri kembali ke abad ke-9 dan 10 Masehi, dengan pengaruh dari seni dan budaya India yang masuk ke Nusantara melalui perdagangan dan penyebaran agama Hindu dan Buddha. Kata "wayang" sendiri berasal dari kata "bayang" atau "bayangan," yang merujuk pada bayangan yang dihasilkan oleh boneka atau tokoh yang dimainkan dalam pertunjukan wayang kulit.
+
+Wayang awalnya merupakan sarana untuk menyebarkan ajaran moral, spiritual, dan filosofis. Salah satu bentuk wayang tertua adalah Wayang Purwa, yang didasarkan pada epik Hindu seperti Ramayana dan Mahabharata. Seiring waktu, wayang berkembang dengan berbagai bentuk dan jenis, yang mencerminkan keragaman budaya dan tradisi di berbagai daerah di Indonesia. Selain sebagai media hiburan, wayang juga menjadi sarana penyebaran ajaran agama dan nilai-nilai etika dalam masyarakat.
+
+<span class="bold">Jenis Wayang</span>
+
+Ada berbagai jenis wayang yang berkembang di Indonesia, masing-masing dengan ciri khas dan keunikannya sendiri:
+
+Wayang Kulit: Wayang kulit adalah salah satu bentuk wayang yang paling terkenal. Terbuat dari kulit kerbau atau kambing yang ditipiskan, boneka wayang kulit dimainkan dengan cara digerakkan di belakang layar putih dengan cahaya dari lampu minyak, sehingga menghasilkan bayangan di layar. Pertunjukan wayang kulit biasanya diiringi oleh gamelan dan dibawakan oleh seorang dalang, yang juga berperan sebagai narator dan pengendali semua tokoh.
+
+Wayang Golek: Wayang golek adalah bentuk wayang yang terbuat dari kayu dan dimainkan secara tiga dimensi. Bentuk wayang ini populer di daerah Sunda, Jawa Barat. Wayang golek memiliki gerakan yang lebih leluasa dibandingkan wayang kulit karena dimainkan secara langsung di atas panggung tanpa layar.
+
+Wayang Orang: Berbeda dengan wayang kulit dan golek, wayang orang adalah bentuk teater di mana para aktor memainkan peran sebagai tokoh wayang dengan kostum dan riasan yang khas. Pertunjukan wayang orang melibatkan tarian, nyanyian, dan dialog yang menceritakan kisah-kisah dari epik tradisional.
+
+<span class="bold">Tokoh Wayang</span>
+
+Tokoh-tokoh dalam wayang memiliki karakteristik dan peran yang unik dalam cerita. Beberapa tokoh terkenal di antaranya:
+
+Arjuna: Seorang ksatria dalam Mahabharata, Arjuna dikenal karena keberaniannya, kebijaksanaannya, dan keterampilannya dalam memanah. Dia adalah salah satu dari Pandawa Lima dan sering menjadi tokoh sentral dalam berbagai cerita wayang.
+
+Semar: Semar adalah tokoh punakawan, yang dalam cerita wayang berperan sebagai penasihat dan penghibur. Meskipun penampilannya sederhana dan lucu, Semar memiliki kebijaksanaan yang mendalam dan sering kali menyampaikan pesan moral kepada para ksatria.
+
+Rahwana: Rahwana adalah raja raksasa yang menjadi antagonis utama dalam kisah Ramayana. Meskipun digambarkan sebagai sosok yang jahat, Rahwana juga memiliki sisi kompleks yang membuatnya menjadi karakter yang menarik.
+
+<span class="bold">Cerita Wayang</span>
+
+Wayang sering kali menceritakan kisah-kisah dari epik besar seperti Ramayana dan Mahabharata, namun juga ada cerita-cerita lokal yang diciptakan oleh para dalang:
+
+Ramayana: Cerita ini mengisahkan tentang Rama, seorang pangeran yang berjuang untuk menyelamatkan istrinya, Sinta, yang diculik oleh Rahwana. Pertarungan antara kebaikan (Rama) dan kejahatan (Rahwana) menjadi tema sentral dalam cerita ini.
+
+Baratayuda: Kisah ini diambil dari Mahabharata dan mengisahkan perang besar antara Pandawa dan Kurawa, dua keluarga kerajaan yang bersaing untuk memperebutkan takhta Hastinapura. Pertarungan ini sarat dengan intrik, pengkhianatan, dan dilema moral.
+
+<span class="bold"> Seni Pertunjukan</span>
+
+Pertunjukan wayang adalah seni yang kompleks, yang melibatkan berbagai elemen seperti musik, dialog, tarian, dan penceritaan. Seorang dalang memainkan peran utama dalam menghidupkan cerita, menggerakkan boneka, dan mengisi suara semua tokoh. Pertunjukan wayang biasanya diiringi oleh gamelan, yang menambah suasana dramatis dan mendukung alur cerita.
+
+Pertunjukan wayang dapat berlangsung selama beberapa jam hingga semalam suntuk, tergantung pada kompleksitas cerita yang dibawakan. Dalam masyarakat tradisional, wayang juga sering diadakan sebagai bagian dari upacara keagamaan atau perayaan penting.
+
+<span class="bold">Pengaruh Budaya</span>
+
+Wayang memiliki pengaruh besar terhadap budaya Indonesia, terutama dalam bidang seni, musik, dan tari. Wayang bukan hanya dianggap sebagai hiburan, tetapi juga sebagai media pendidikan moral dan spiritual. Nilai-nilai yang diajarkan dalam cerita wayang sering kali mencerminkan filosofi hidup masyarakat Jawa, seperti konsep "tri guna" (tiga keutamaan) dan "sangkan paraning dumadi" (asal dan tujuan hidup manusia).
+
+Pengaruh wayang juga terlihat dalam seni rupa, di mana tokoh-tokoh wayang diabadikan dalam berbagai bentuk seni visual, seperti lukisan, ukiran, dan batik. Dalam musik, gamelan yang mengiringi wayang menjadi salah satu warisan budaya yang sangat dihargai dan dipelajari di berbagai penjuru dunia.
+
+<span class="bold">Galeri Gambar</span>
+
+Membuat galeri gambar yang memuat gambar-gambar wayang, dalang, dan adegan pertunjukan bisa menjadi cara yang menarik untuk lebih memahami keindahan seni wayang. Gambar-gambar ini bisa mencakup:
+
+Ilustrasi tokoh-tokoh wayang terkenal seperti Arjuna, Semar, dan Rahwana.
+Foto-foto dari pertunjukan wayang kulit dengan dalang sedang beraksi.
+Gambar wayang golek dengan detail ukiran dan riasan yang khas.
+Adegan-adegan penting dari cerita wayang yang diambil dari berbagai epik.
+Galeri ini bisa membantu menggambarkan kekayaan dan keragaman tradisi wayang di Indonesia, serta memperlihatkan bagaimana seni wayang telah menjadi bagian penting dari identitas budaya Indonesia.
             </p>
           </div>
         </div>
       </div>
+    
     </section>
+
+    <!-- gallery -->
+    <div class="pembatas">.</div>
+      <section class="gallery" id="gallery">
+        <div class="text">
+          <h1 class="title">From Our Gallery</h1>
+        </div>
+        <div class="grid-wrapper">
+          <div>
+            <img src="Image/gallery/wayang2 1.png" class="image">
+          </div>
+          <div>
+            <img src="Image/gallery/image 20.png" class="image">
+          </div>
+          <div>
+            <img src="Image/gallery/image 19.png" class="image">
+          </div>
+          <div  class="tall">
+            <img src="Image/gallery/image 14.svg" class="image">
+          </div>
+          <div>
+            <img src="Image/gallery/image 17.png" class="image">
+          </div>
+          <div class="wide">
+            <img src="Image/gallery/image 18.png" class="image">
+          </div>
+          <div>
+            <img src="Image/gallery/image 13.svg" class="image">
+          </div>
+          <div class="img-13">
+            <img src="Image/gallery/image 21.png" class="image">
+          </div>
+          <div class="tall-2">
+            <img src="Image/gallery/wayang3 1.png" class="image">
+          </div>
+          <div>
+            <img src="Image/gallery/image 14-1.svg" class="image">
+          </div>
+      </section>
+     <!-- gallery end -->
+  <footer class="wayang-footer">
+    <div class="container-footer">
+      <div class="col1">
+        <a href="#" class="logo"><img src="Image/logo cream.svg" class="logo-footer"></a>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">History</a>
+          </li>
+          <li>
+            <a href="#">Tokoh</a>
+          </li>
+          <li>
+            <a href="#">Type</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
+          </li>
+          <li>
+            <a href="#">Type</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col3">
+        <p class="text-col3">Join Our Partnership</p>
+        <form class="form-footer">
+           <div class="input-wrap">
+            <input type="email" placeholder="example@gmail.com"/>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+           </div>
+        </form>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
